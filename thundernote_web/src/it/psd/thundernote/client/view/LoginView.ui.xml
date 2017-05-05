@@ -1,0 +1,102 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:image field='logo' src='../resources/thundernote.png' />
+	<ui:image field='twitter' src='../resources/twitterlogo.gif' />
+	<ui:image field='google' src='../resources/googlelogo.gif' />
+	<ui:image field='facebook' src='../resources/facebooklogo.jpeg' />
+
+	<ui:style>
+		.outer {
+			padding: 100px 0;
+			width: 100%;
+		}
+		
+		.container {
+			width: 100%;
+		}
+		
+		.content {
+            -webkit-border-radius: 10px;   
+            border-radius: 10px;
+            width: 80%;
+            padding: 40px;
+            text-align: left;
+            background-color: #e8effa;
+            border: 3px solid #ccc;
+        }
+		
+		.what-to-do {
+			margin-top: 40px;
+			font-size: 1.8em;
+		}
+		
+		.providers {
+			margin: 50px 20px;
+		}
+		
+		.provider-button {
+			float: left;
+			padding: 0 20px;
+		}
+		
+		@sprite .sidebox {
+            gwt-image: 'logo';
+			float: right;
+			margin-left: 20px;
+			padding: 20px;
+		}
+		
+		.description {
+			padding: 20px 0
+		}
+		
+		.clear {
+			clear: both;
+		}
+	</ui:style>
+
+	<g:HTMLPanel styleName='{style.outer}'>
+		<center>
+			<div class='{style.container}'>
+				<div class='{style.content}'>
+					
+					<div class='{style.sidebox}'/>
+					<img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" 
+                         alt="Powered by Google App Engine" />	
+					<div class='{style.what-to-do}'>To use Thundernote, login with one of the following
+						providers.</div>
+					<div class='{style.providers}'>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='twitterButton' width='120px'
+								height='40px'>
+								<g:upFace image='{twitter}' />
+							</g:PushButton>
+						</div>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='googleButton' width='120px'
+								height='40px'>
+								<g:upFace image='{google}' />
+							</g:PushButton>
+						</div>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='facebookButton' width='120px'
+								height='40px'>
+								<g:upFace image='{facebook}' />
+							</g:PushButton>
+						</div>
+					</div>
+					<div>
+						<div class='{style.clear} {style.description}'>
+							<p><em>Thundernote</em> is your personal space on the new Web. Write your diary, load photos,
+							    save your best youtube music videos and favorite places. Share only what you want!
+				           </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="https://playfoursquare.s3.amazonaws.com/press/logo/poweredByFoursquare_gray.png" 
+                         alt="Powered by Foursquare" />
+		</center>
+	</g:HTMLPanel>
+</ui:UiBinder> 
