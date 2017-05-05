@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		version="2.5" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>loginService</servlet-name>
+    <servlet-class>it.psd.thundernote.server.LoginServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginService</servlet-name>
+    <url-pattern>/thundernote/loginService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>placeServlet</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.PlaceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>placeServlet</servlet-name>
+    <url-pattern>/placeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletePlaceServlet</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.DeletePlaceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>deletePlaceServlet</servlet-name>
+    <url-pattern>/deletePlaceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getPlacesServlet</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.GetPlacesServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getPlacesServlet</servlet-name>
+    <url-pattern>/getPlacesServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ===================== Login Google Servlet ===================== -->
+
+  <servlet>
+    <servlet-name>logingoogle</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.LoginGoogleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logingoogle</servlet-name>
+    <url-pattern>/logingoogle</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logingooglecallback</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.LoginGoogleCallbackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logingooglecallback</servlet-name>
+    <url-pattern>/logingooglecallback</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ===================== Login Twitter Servlet ===================== -->
+
+  <servlet>
+    <servlet-name>logintwitter</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.LoginTwitterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logintwitter</servlet-name>
+    <url-pattern>/logintwitter</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logintwittercallback</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.LoginTwitterCallbackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logintwittercallback</servlet-name>
+    <url-pattern>/logintwittercallback</url-pattern>
+  </servlet-mapping>
+  
+   <!-- ===================== Login Facebook Servlet ===================== -->
+
+  <servlet>
+    <servlet-name>loginfacebook</servlet-name>
+    <servlet-class>it.psd.thundernote.server.servlets.LoginFacebookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginfacebook</servlet-name>
+    <url-pattern>/loginfacebook</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Thundernote.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>thunder-note</application>
+  <version>3</version>
+
+  <!--
+    Allows App Engine to send multiple requests to one instance in parallel:
+  -->
+  <threadsafe>true</threadsafe>
+
+  <!-- Configure serving/caching of GWT files -->
+  <static-files>
+    <include path="**" />
+
+    <!-- The following line requires App Engine 1.3.2 SDK -->
+    <include path="**.nocache.*" expiration="0s" />
+
+    <include path="**.cache.*" expiration="365d" />
+    <exclude path="**.gwt.rpc" />
+  </static-files>
+
+  <system-properties>
+    <!-- Configure java.util.logging -->
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    
+    <!-- Facebook credentials -->
+    <property name="fb_app_id" value="YOUR_FB_ID" />
+	<property name="fb_api_key" value="YOUR_FB_KEY" />
+	<property name="fb_secret" value="YOUR_FB_SECRET" />
+	<property name="fb_callback_url" value="https://thunder-note.appspot.com/loginfacebook" />
+    
+	<!-- Twitter credentials -->
+    <property name="twitter-consumer-key" value="YOUR_TWITTER_KEY" />
+	<property name="twitter-consumer-secret" value="YOUR_TWITTER_SECRET" />
+	
+	<!-- Foursquare credentials -->
+	<property name='fs_app_id' value='YOUR_FOURSQUARE_ID'/>
+	<property name='fs_secret' value='YOUR_FOURSQUARE_SECRET'/>
+  </system-properties>
+
+  <sessions-enabled>true</sessions-enabled>
+
+</appengine-web-app>
