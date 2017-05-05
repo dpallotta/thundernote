@@ -15,9 +15,9 @@ function initialize(){
   $( "#map_canvas" ).height($(window).height() - 50);
   markers = new L.FeatureGroup();
   map = new L.Map('map_canvas').addLayer(markers);
-  var mapboxUrl = 'https://a.tiles.mapbox.com/v3/thundernote.map-s9wezoke.jsonp';
+  var mapboxUrl = 'https://a.tiles.mapbox.com/v3/thundernote.map-YOUR_MAP_ID.jsonp';
   wax.tilejson(mapboxUrl, function(tilejson) {
-	  tilejson.tiles[0] = "https://a.tiles.mapbox.com/v3/thundernote.map-s9wezoke/{z}/{x}/{y}.png" //fixing mixed content
+	  tilejson.tiles[0] = "https://a.tiles.mapbox.com/v3/thundernote.map-YOUR_MAP_ID/{z}/{x}/{y}.png" //fixing mixed content
       map.addLayer(new wax.leaf.connector(tilejson));
   });
     
