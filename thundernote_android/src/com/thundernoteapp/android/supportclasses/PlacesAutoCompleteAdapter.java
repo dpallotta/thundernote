@@ -29,7 +29,7 @@ Filterable {
 	private static final String TYPE_AUTOCOMPLETE = "/autocomplete";
 	private static final String OUT_JSON = "/json";
 
-	private static final String API_KEY = "AIzaSyDBYgETLC8rswIkhzKaH4v6km4vAf_Y9rQ";
+	private static final String API_KEY = "YOUR_API_KEY";
 
 	public PlacesAutoCompleteAdapter(Context context, int textViewResourceId) {
 		super(context, textViewResourceId);
