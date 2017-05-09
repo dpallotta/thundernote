@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">ThunderNoteApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Thunder-Note</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_twitter_login">Login with Twitter</string>
+    <string name="title_activity_google_login">Login with Google</string>
+    <string name="title_activity_foursquare">Thunder-Note</string>
+    <string name="title_activity_info_place">Thunder-Note</string>
+    <string name="title_activity_scelta_servizio">Thunder-Note</string>
+    <string name="title_activity_favorite_places">Favorite Places</string>
+    <string name="search">Insert position!</string>
+    <string name="key">Search by key!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_no_internet">NoInternetActivity</string>
+
+</resources>
