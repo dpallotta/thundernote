@@ -258,7 +258,7 @@ public class FoursquareActivity extends Activity {
 									+ latitude
 									+ ","
 									+ longitude
-									+ "&client_id=FJ1H32ZWDSANM5SVAX0SPC3YFSTGCGNSCKRGNU52LSZ5B1KY&client_secret=BPAQULHN3KWQOBCBFERMZ421W5Q1RXJ1KS32SV3QOP4VYHSP"
+									+ "&client_id=YOUR_ID&client_secret=YOUR_SECRET"
 									+ "&query="
 									+ keywords
 									+"&radius="
@@ -271,7 +271,7 @@ public class FoursquareActivity extends Activity {
 									+ latitude
 									+ ","
 									+ longitude
-									+ "&client_id=FJ1H32ZWDSANM5SVAX0SPC3YFSTGCGNSCKRGNU52LSZ5B1KY&client_secret=BPAQULHN3KWQOBCBFERMZ421W5Q1RXJ1KS32SV3QOP4VYHSP"
+									+ "&client_id=YOUR_ID&client_secret=YOUR_SECRET"
 									+ "&section="
 									+ filter
 									+ "&query="
