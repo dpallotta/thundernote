@@ -240,7 +240,7 @@ public class FavoritePlacesActivity extends Activity {
 					HttpGet get = new HttpGet(
 							"https://api.foursquare.com/v2/venues/"
 									+ venueID
-									+ "?&client_id=FJ1H32ZWDSANM5SVAX0SPC3YFSTGCGNSCKRGNU52LSZ5B1KY&client_secret=BPAQULHN3KWQOBCBFERMZ421W5Q1RXJ1KS32SV3QOP4VYHSP&v=20110908");
+									+ "?&client_id=YOUR_ID&client_secret=YOUR_SECRET&v=20110908");
 
 					HttpResponse rp = hc.execute(get);
 
