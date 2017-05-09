@@ -38,8 +38,8 @@ import android.widget.Toast;
 
 public class GoogleLoginActivity extends Activity {
 
-	final static String CLIENT_ID = "355958793374.apps.googleusercontent.com";
-	private static final String CLIENT_SECRET = "F3OwbqpVym7Dw_iBCLKZg_kJ";
+	final static String CLIENT_ID = "YOUR_CLIENT_ID";
+	private static final String CLIENT_SECRET = "YOUR_CLIENT_SECRET";
 	private static final String SCOPE = "https://www.googleapis.com/auth/userinfo.email";
 	private static final String REDIRECT_URI = "http://localhost";
 	Intent SceltaServizioIntent;
