@@ -34,8 +34,8 @@ import android.widget.Toast;
 
 public class TwitterLoginActivity extends Activity {
 
-	final static String APIKEY = "ML48VSZPF8nOnDzYW5tAg";
-	final static String APISECRET = "A03cIY7L5yqT3u9ITQydtBXiUDMIF9EW6sspwHmzzVs";
+	final static String APIKEY = "YOUR_API_KEY";
+	final static String APISECRET = "YOUR_API_SECRET";
 	final static String CALLBACK = "oauth:///";
 	Intent SceltaServizioIntent;
 	Token requestToken;
